@@ -19,3 +19,13 @@ with col1:
   resp = st.checkbox("Estoy de acuerdo")
   if resp:
     st.write("HELL YEAH")
+
+with col2:
+  st.subheader("Esta es la segunda columna")
+  modo = st.radio("¿Cuál es tu perrito favorito?", ("Perrito mirando feo", "Perrito feliz", "Perritos amigos"))
+  if modo == "Perrito mirando feo" :
+    st.write("Tu favorito es el perrito mirando feo")
+  if modo == "Perrito feliz" :
+    st.write("Tu favorito es el perrito feliz")
+  if modo == "Perritos amigos" :
+    st.write("Tu favorito son los perritos amigos)

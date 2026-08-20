@@ -12,3 +12,10 @@ st.write("El texto escrito es", texto)
 
 st.subheader("Ahora 2 columnas")
 col1, col2 = st.columns(2)
+
+with col1:
+  st.subheader("Esta es la primera columna")
+  st.write("Los perritos son la cosa más bacana")
+  resp = st.checkbox("Estoy de acuerdo")
+  if resp:
+    st.write("HELL YEAH")
